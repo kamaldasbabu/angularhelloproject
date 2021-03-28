@@ -1,0 +1,31 @@
+<p>contact works!</p>
+<div class="serviceContainer">
+    <ul>
+        <li *ngFor="let contact of contactList">
+            <span>ID: {{contact.id}}</span> Name: {{contact.name}}
+        </li>
+    </ul>
+</div>
+<div *ngIf="success"> success</div>
+
+<div class="container">
+    <div><h2>Add Contact</h2></div>
+    <div>
+        <form #addContact="ngForm" (ngSubmit)="addNewContact(addContact)">
+            <div class="form-group">
+            <label for="exampleInputEmail1">ID</label>
+                <input type="number" class="form-control" id="contactid" aria-describedby="emailHelp" placeholder="ID: eg. 10"
+                     name="contactid" required ngModel>
+            <small id="emailHelp" class="form-text text-muted">id here.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Name</label>
+                <input type="text" class="form-control" id="contactname" placeholder="Name eg. Babu" name="contactname" required ngModel>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!addContact.valid">Add Contact</button>
+        </form>
+    </div>
+    <button  class="btn btn-primary" (click)="updatedContact(3)">Update Contact</button>
+    <button  class="btn btn-primary" (click)="deleteContact(11)">Delete Contact</button>
+</div>
+

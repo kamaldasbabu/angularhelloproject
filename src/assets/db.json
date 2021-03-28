@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "kb"
+    },
+    {
+      "id": 2,
+      "title": "xamp-server",
+      "author": "kb"
+    },
+    {
+      "id": 3,
+      "title": "apache-server",
+      "author": "kb"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "sone content",
+      "postId": 1
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "name": "A"
+    },
+    {
+      "id": 2,
+      "name": "B"
+    },
+    {
+      "id": 3,
+      "name": "Babu"
+    },
+    {
+      "id": 5,
+      "name": "BCD"
+    },
+    {
+      "id": 7,
+      "name": "blu"
+    },
+    {
+      "id": 8,
+      "name": "kamal"
+    },
+    {
+      "id": 9,
+      "name": "shiuli"
+    },
+    {
+      "id": 10,
+      "name": "priyanka"
+    },
+    {
+      "id": 12,
+      "name": "hh"
+    },
+    {
+      "id": 44,
+      "name": "ee"
+    },
+    {
+      "id": 22,
+      "name": "Moinuddin"
+    }
+  ]
+}
